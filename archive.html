@@ -1,36 +1,115 @@
-
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>آرشیو گزارش‌ها | Shahabai News</title>
-  <link rel="stylesheet" href="assets/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>آرشیو گزارش‌ها | Shahabai News</title>
+
+<link rel="stylesheet" href="assets/style.css">
+
 </head>
+
+
 <body>
-  <div class="container">
-    <header>
-      <h1>آرشیو گزارش‌های خبری</h1>
-      <p>گزارش‌های روزانه Shahabai News Agent</p>
-    </header>
 
-    <a class="archive-btn" href="index.html">بازگشت به صفحه اصلی</a>
+<div class="container">
 
-    <section>
-      <h2 class="section-title finance">گزارش‌های ذخیره‌شده</h2>
-      <div id="reports-list">
-        <div class="card">
-          <p>برای مشاهده گزارش‌ها، فهرست در حال بارگذاری است...</p>
-        </div>
-      </div>
-    </section>
 
-    <footer>Powered by Shahabaiagent_bot</footer>
-  </div>
-[
-  {
-    "date": "۱۴۰۵/۰۷/۱۸",
-    "title": "گزارش روزانه اخبار",
-    "file": "1405-07-18.html"
-  }
-]
+<header>
+
+<h1>📚 آرشیو گزارش‌ها</h1>
+
+<p>گزارش‌های روزانه Shahabai News Agent</p>
+
+</header>
+
+
+<a class="archive-btn" href="index.html">
+بازگشت به صفحه اصلی
+</a>
+
+
+
+<h2 class="section-title finance">
+گزارش‌های ذخیره شده
+</h2>
+
+
+<div id="reports-list">
+
+<div class="card">
+در حال دریافت گزارش‌ها...
+</div>
+
+</div>
+
+
+
+<footer>
+Powered by Shahabaiagent_bot
+</footer>
+
+
+
+</div>
+
+
+<script>
+
+fetch("reports/index.json")
+
+.then(response => response.json())
+
+.then(data => {
+
+
+let box = document.getElementById("reports-list");
+
+box.innerHTML = "";
+
+
+data.forEach(item => {
+
+
+box.innerHTML += `
+
+<div class="card">
+
+<h3>${item.title}</h3>
+
+<p class="meta">
+📅 ${item.date}
+</p>
+
+
+<a href="reports/${item.file}">
+مشاهده گزارش
+</a>
+
+
+</div>
+
+`;
+
+
+});
+
+
+})
+
+.catch(() => {
+
+document.getElementById("reports-list").innerHTML =
+"<div class='card'>خطا در دریافت آرشیو</div>";
+
+});
+
+
+</script>
+
+
+</body>
+
+</html>
