@@ -1,23 +1,2 @@
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800&display=swap');
-*{box-sizing:border-box}
-body{margin:0;padding:15px;font-family:Vazirmatn,Tahoma,sans-serif;background:#f1f5f9;color:#1e293b;line-height:1.9}
-.container{max-width:900px;margin:auto}
-header{background:linear-gradient(135deg,#0f172a,#2563eb);color:#fff;padding:28px 20px;border-radius:22px;text-align:center;box-shadow:0 10px 25px #0002}
-header h1{margin:0;font-size:28px}header p{margin:6px 0}.updated{font-size:13px;opacity:.9}
-.archive-btn{display:block;background:#fff;color:#2563eb;padding:12px;text-align:center;border-radius:14px;margin:18px 0;text-decoration:none;font-weight:700;box-shadow:0 5px 15px #0001}
-.section-title{padding:11px 16px;border-radius:12px;color:#fff;margin:28px 0 12px;font-size:20px}
-.football{background:#16834a}.fpl{background:#7c3aed}.finance{background:#1e40af}.game{background:#ea580c}
-.card{background:#fff;border-radius:18px;padding:20px;margin:14px 0;box-shadow:0 5px 20px #0000000d;overflow:hidden}
-.card h3{margin:4px 0 8px;color:#0f172a}.card p{margin:8px 0}
-.league-section h3{margin:22px 4px 8px;font-size:19px;color:#0f172a}
-.news-image{display:block;margin:0 0 15px;width:100%;padding:0}
-.news-image img{display:block;width:100%;height:auto;min-height:180px;max-height:460px;object-fit:cover;background:#dbeafe;border-radius:14px;color:#334155}
-.news-image figcaption{font-size:12px;color:#64748b;margin-top:6px}
-.meta{color:#64748b;font-size:13px}
-a{color:#2563eb;text-decoration:none}a:hover{text-decoration:underline}
-.market-card{border:1px solid #bfdbfe}
-.market-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:14px 0}
-.market-item{display:flex;flex-direction:column;gap:6px;background:#eff6ff;border-radius:14px;padding:16px;min-width:0}
-.market-item span{font-size:14px;color:#334155}.market-item strong{font-size:19px;color:#1d4ed8;overflow-wrap:anywhere}
-footer{text-align:center;padding:28px 8px;color:#64748b;font-size:13px}
-@media(max-width:600px){body{padding:10px}header h1{font-size:22px}.card{padding:15px}.section-title{font-size:18px}.market-grid{grid-template-columns:1fr}.market-item strong{font-size:18px}}
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap');
+*{box-sizing:border-box}body{margin:0;padding:18px;background:#f3f6fb;color:#17243b;font-family:Vazirmatn,Tahoma,sans-serif;line-height:1.85}.container{max-width:1180px;margin:auto}.hero{background:linear-gradient(135deg,#10233f,#28517d);color:#fff;border-radius:18px;padding:24px;margin-bottom:18px}.hero h1{margin:0;font-size:clamp(24px,4vw,34px)}.hero p{margin:5px 0}.updated,.meta{font-size:12px;color:#6a7890}.hero .updated{color:#d9e7fa}.archive-btn{display:block;padding:12px 16px;background:#fff;border:1px solid #dce5f2;border-radius:12px;text-decoration:none;font-weight:700;margin:14px 0;color:#245a9b}.section-title{padding:11px 15px;border-radius:12px;color:white;background:#344966;margin:26px 0 12px;font-size:21px}.section-title.football{background:#12664e}.section-title.fpl{background:#6639ad}.section-title.finance{background:#1d4eaf}.league-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.league-card,.card{background:#fff;border:1px solid #e0e8f3;border-radius:15px;padding:18px;margin:0 0 14px;box-shadow:0 5px 18px #17243b08;min-width:0}.league-card h3{margin:0 0 12px;color:#102c50;font-size:20px;border-bottom:1px solid #e7edf5;padding-bottom:8px}.league-card h4{margin:14px 0 4px;font-size:15px;color:#235a94}.league-card p,.card p{margin:6px 0}.competition{border-top:1px solid #edf1f7;padding-top:6px;margin-top:10px}.empty-state{color:#687991;background:#f6f8fb;padding:8px 10px;border-radius:8px;font-size:13px}.note{padding:14px;background:#eaf2ff;border-radius:12px}.match-row{display:flex;align-items:center;gap:10px;padding:8px 10px;border:1px solid #e4ebf5;border-radius:10px;margin:8px 0}.match-info{flex:1;min-width:0}.match-info strong{color:#145cb4;padding:0 7px}.match-status{font-size:12px;color:#66768c}.match-thumb{border:0;padding:0;background:none;width:72px;height:48px;flex:0 0 72px;border-radius:8px;overflow:hidden;cursor:zoom-in}.match-thumb img{display:block;width:100%;height:100%;object-fit:cover}.match-thumb:focus-visible{outline:3px solid #2776d2;outline-offset:2px}.image-modal{display:none;position:fixed;inset:0;z-index:1000;background:#06101eeF;align-items:center;justify-content:center;flex-direction:column;padding:24px}.image-modal.open{display:flex}.image-modal img{max-width:min(94vw,1200px);max-height:82vh;object-fit:contain;border-radius:12px}.image-modal p{color:#fff;margin:10px}.modal-close{position:absolute;top:12px;left:18px;color:white;background:#26374f;border:0;border-radius:50%;width:42px;height:42px;font-size:28px;cursor:pointer}footer{text-align:center;padding:24px 8px;color:#65748a;font-size:13px}@media(max-width:720px){body{padding:10px}.league-grid{grid-template-columns:1fr}.hero{padding:20px}.league-card,.card{padding:14px}.match-thumb{width:64px;height:44px;flex-basis:64px}}
