@@ -27,45 +27,10 @@
 
     <footer>Powered by Shahabaiagent_bot</footer>
   </div>
-
-  <script>
-    fetch('reports/index.json')
-      .then(response => {
-        if (!response.ok) throw new Error('فهرست آرشیو پیدا نشد');
-        return response.json();
-      })
-      .then(reports => {
-        const list = document.getElementById('reports-list');
-        list.replaceChildren();
-
-        if (!reports.length) {
-          list.textContent = 'هنوز گزارشی در آرشیو ثبت نشده است.';
-          return;
-        }
-
-        reports.forEach(report => {
-          const card = document.createElement('div');
-          card.className = 'card';
-
-          const title = document.createElement('h3');
-          title.textContent = report.title || report.date;
-
-          const date = document.createElement('p');
-          date.className = 'meta';
-          date.textContent = 'تاریخ گزارش: ' + report.date;
-
-          const link = document.createElement('a');
-          link.href = 'reports/' + encodeURIComponent(report.file);
-          link.textContent = 'مشاهده گزارش';
-
-          card.append(title, date, link);
-          list.appendChild(card);
-        });
-      })
-      .catch(() => {
-        document.getElementById('reports-list').textContent =
-          'هنوز فهرست آرشیو ساخته نشده است.';
-      });
-  </script>
-</body>
-</html>
+[
+  {
+    "date": "۱۴۰۵/۰۷/۱۸",
+    "title": "گزارش روزانه اخبار",
+    "file": "1405-07-18.html"
+  }
+]
