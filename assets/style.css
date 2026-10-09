@@ -2,22 +2,22 @@
 *{box-sizing:border-box}
 body{margin:0;padding:15px;font-family:Vazirmatn,Tahoma,sans-serif;background:#f1f5f9;color:#1e293b;line-height:1.9}
 .container{max-width:900px;margin:auto}
-header{background:linear-gradient(135deg,#0f172a,#2563eb);color:#fff;padding:30px 20px;border-radius:25px;text-align:center;box-shadow:0 10px 25px #0002}
-header h1{margin:0;font-size:28px}
-header p{opacity:.94}
-.archive-btn{display:block;background:#fff;color:#2563eb;padding:13px;text-align:center;border-radius:15px;margin:20px 0;text-decoration:none;font-weight:700;box-shadow:0 5px 15px #0001}
-.section-title{padding:12px 16px;border-radius:12px;color:#fff;margin-top:30px}
+header{background:linear-gradient(135deg,#0f172a,#2563eb);color:#fff;padding:28px 20px;border-radius:22px;text-align:center;box-shadow:0 10px 25px #0002}
+header h1{margin:0;font-size:28px}header p{margin:6px 0}.updated{font-size:13px;opacity:.9}
+.archive-btn{display:block;background:#fff;color:#2563eb;padding:12px;text-align:center;border-radius:14px;margin:18px 0;text-decoration:none;font-weight:700;box-shadow:0 5px 15px #0001}
+.section-title{padding:11px 16px;border-radius:12px;color:#fff;margin:28px 0 12px;font-size:20px}
 .football{background:#16834a}.fpl{background:#7c3aed}.finance{background:#1e40af}.game{background:#ea580c}.ai{background:#0891b2}
+.card{background:#fff;border-radius:18px;padding:20px;margin:14px 0;box-shadow:0 5px 20px #0000000d;overflow:hidden}
+.card h3{margin:4px 0 8px;color:#0f172a}.card p{margin:8px 0}
 .league-section h3{margin:22px 4px 8px;font-size:19px;color:#0f172a}
-.card{background:#fff;border-radius:18px;padding:20px;margin:14px 0;box-shadow:0 5px 20px #0000000d}
-.card h3{margin-top:0;color:#0f172a}
-.news-image{margin:0 0 16px}
-.news-image img{display:block;width:100%;max-height:420px;object-fit:cover;border-radius:14px}
+.news-image{display:block;margin:0 0 15px;width:100%}
+.news-image img{display:block;width:100%;height:auto;max-height:460px;min-height:160px;object-fit:contain;background:#e2e8f0;border-radius:14px;color:#334155}
 .news-image figcaption{font-size:12px;color:#64748b;margin-top:6px}
 .report-note{background:#e0f2fe;padding:12px 15px;border-radius:12px;font-size:14px}
 .meta{color:#64748b;font-size:13px}
-.tag{display:inline-block;padding:4px 10px;background:#e2e8f0;border-radius:20px;font-size:12px;margin:3px}
-a{color:#2563eb;text-decoration:none}
-footer{text-align:center;padding:30px;color:#64748b;font-size:13px}
-.price-card{display:grid;gap:12px}
-@media(max-width:600px){body{padding:10px}header h1{font-size:22px}.card{padding:15px}.league-section h3{font-size:17px}}
+a{color:#2563eb;text-decoration:none}a:hover{text-decoration:underline}
+.price-card{border:1px solid #bfdbfe}
+.price-highlight{background:#eff6ff;border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:4px;text-align:center}
+.price-highlight span{font-size:15px;color:#334155}.price-highlight strong{font-size:28px;color:#1d4ed8}.price-highlight small{font-size:12px;color:#64748b}
+footer{text-align:center;padding:28px 8px;color:#64748b;font-size:13px}
+@media(max-width:600px){body{padding:10px}header h1{font-size:22px}.card{padding:15px}.section-title{font-size:18px}.price-highlight strong{font-size:24px}}
