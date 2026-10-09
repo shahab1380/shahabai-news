@@ -1,315 +1,75 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>گزارش روزانه اخبار</title>
-
+<title>قالب گزارش روزانه اخبار</title>
 <link rel="stylesheet" href="../assets/style.css">
-
 </head>
-
-
 <body>
-
 <div class="container">
-
-
 <header>
-
 <h1>📰 Shahabai News Agent</h1>
-
-<p>
-گزارش روزانه اخبار
-</p>
-
-<p>
-📅 تاریخ گزارش:
-</p>
-
+<p>قالب گزارش روزانه اخبار</p>
+<p>تاریخ گزارش: [تاریخ شمسی] | [تاریخ میلادی]</p>
 </header>
+<a class="archive-btn" href="../archive.html">مشاهده آرشیو گزارش‌ها</a>
 
+<p class="report-note">قانون انتشار: هر خبر باید تاریخ، منبع معتبر و لینک داشته باشد. برای خبرهای مهم، تصویر مرتبط با نشانی مستقیم و قابل‌نمایش درج شود؛ اگر تصویر معتبر پیدا نشد، تصویر ساختگی یا نامرتبط استفاده نشود.</p>
 
+<h2 class="section-title football">⚽ فوتبال جهان — دسته‌بندی بر اساس لیگ</h2>
+<section class="league-section">
+<h3>🏴 لیگ برتر انگلیس (Premier League)</h3>
+<!-- خبرهای این لیگ؛ برای هر خبر از article.card استفاده شود و در صورت وجود تصویر معتبر، figure.news-image اضافه شود. -->
+<div class="card"><p>[خبرهای مهم، نتایج، برنامه بازی‌ها به وقت ایران، نقل‌وانتقالات، مصدومان و محرومان]</p></div>
+</section>
+<section class="league-section">
+<h3>🇪🇸 لالیگا (La Liga)</h3>
+<div class="card"><p>[خبرهای مهم، نتایج، برنامه بازی‌ها به وقت ایران، نقل‌وانتقالات و مصدومان]</p></div>
+</section>
+<section class="league-section">
+<h3>🇮🇹 سری‌آ ایتالیا (Serie A)</h3>
+<div class="card"><p>[خبرهای مهم، نتایج و برنامه بازی‌ها]</p></div>
+</section>
+<section class="league-section">
+<h3>🇩🇪 بوندس‌لیگا (Bundesliga)</h3>
+<div class="card"><p>[خبرهای مهم، نتایج و برنامه بازی‌ها]</p></div>
+</section>
+<section class="league-section">
+<h3>🇫🇷 لیگ یک فرانسه (Ligue 1)</h3>
+<div class="card"><p>[خبرهای مهم، نتایج و برنامه بازی‌ها]</p></div>
+</section>
+<section class="league-section">
+<h3>🏆 لیگ قهرمانان اروپا و سایر رقابت‌های اروپایی</h3>
+<div class="card"><p>[خبرهای مهم لیگ قهرمانان، لیگ اروپا و جام‌های داخلی]</p></div>
+</section>
+<section class="league-section">
+<h3>🇮🇷 فوتبال ایران</h3>
+<div class="card"><p>[لیگ برتر، جام حذفی، تیم ملی و رقابت‌های آسیایی]</p></div>
+</section>
 
-<a class="archive-btn" href="../archive.html">
-📚 بازگشت به آرشیو
-</a>
+<h2 class="section-title fpl">🎯 فانتزی لیگ برتر انگلیس (FPL)</h2>
+<div class="card"><p>[مصدومیت‌ها، نشست‌های خبری، ترکیب احتمالی، ددلاین به وقت ایران، کاپیتان و پیشنهادهای مبتنی بر اطلاعات معتبر]</p></div>
 
+<h2 class="section-title">🏅 سایر ورزش‌های مهم جهان</h2>
+<div class="card"><p>[بسکتبال، تنیس، فرمول یک، والیبال و ورزش‌های مهم دیگر؛ فقط خبرهای بااهمیت]</p></div>
 
+<h2 class="section-title finance">🧾 حسابداری، مالیات و بیمه ایران</h2>
+<div class="card"><p>[بخشنامه‌ها و تغییرات قانونی؛ شماره، تاریخ و لینک مرجع رسمی در اولویت]</p></div>
 
+<h2 class="section-title game">🎮 اخبار صنعت بازی</h2>
+<div class="card"><p>[خبرهای مهم PC، PlayStation، Xbox، استودیوها و به‌روزرسانی‌های مهم]</p></div>
 
-<!-- فوتبال جهان -->
+<h2 class="section-title game">📱 بازی‌های تازه اندروید</h2>
+<div class="card"><p>[نام بازی، تاریخ انتشار، سبک، لینک رسمی Google Play یا صفحه توسعه‌دهنده]</p></div>
 
-<h2 class="section-title football">
-⚽ فوتبال جهان
-</h2>
+<h2 class="section-title ai">🤖 هوش مصنوعی</h2>
+<div class="card"><p>[مدل‌ها، ابزارهای رایگان، قابلیت‌های جدید و ابزارهای برنامه‌نویسی هوش مصنوعی]</p></div>
 
+<h2 class="section-title finance">💰 طلا و ارز</h2>
+<div class="card"><p>[قیمت، واحد، زمان ثبت به وقت ایران و منبع قابل‌اعتماد؛ در صورت نبود داده زنده، صریحاً اعلام شود]</p></div>
 
-<div class="card">
-
-<h3>Premier League</h3>
-
-<p>
-نتایج:
-</p>
-
-<ul>
-<li>تیم - نتیجه - گلزنان - پاس گل</li>
-</ul>
-
-
-<p>
-بازی‌های پیش‌رو:
-</p>
-
-<ul>
-<li>
-تاریخ | ساعت ایران | ورزشگاه | تیم‌ها
-</li>
-</ul>
-
-
+<footer>تهیه‌شده برای Shahabaiagent_bot · منابع کنار هر خبر درج می‌شوند.</footer>
 </div>
-
-
-
-<div class="card">
-
-<h3>La Liga</h3>
-
-<p>
-نتایج و برنامه مسابقات
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>Serie A</h3>
-
-<p>
-نتایج و برنامه مسابقات
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>Bundesliga</h3>
-
-<p>
-نتایج و برنامه مسابقات
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>Ligue 1</h3>
-
-<p>
-نتایج و برنامه مسابقات
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>UEFA Champions League</h3>
-
-<p>
-نتایج و اخبار مهم
-</p>
-
-</div>
-
-
-
-
-
-<!-- فوتبال ایران -->
-
-<h2 class="section-title football">
-🇮🇷 فوتبال ایران
-</h2>
-
-
-<div class="card">
-
-<p>
-لیگ برتر، جام حذفی، تیم ملی و باشگاه‌ها
-</p>
-
-</div>
-
-
-
-
-
-<!-- FPL -->
-
-<h2 class="section-title fpl">
-🏆 Fantasy Premier League
-</h2>
-
-
-<div class="card">
-
-<p>
-مصدومیت‌ها، ترکیب احتمالی، بازیکنان مهم، کاپیتان‌ها
-</p>
-
-</div>
-
-
-
-
-
-<!-- ورزش جهان -->
-
-<h2 class="section-title finance">
-🌍 رویدادهای مهم ورزشی جهان
-</h2>
-
-
-<div class="card">
-
-<p>
-بسکتبال، تنیس، فرمول یک، ورزش‌های رزمی و...
-</p>
-
-</div>
-
-
-
-
-
-<!-- مالی -->
-
-<h2 class="section-title finance">
-📊 حسابداری و مالیات ایران
-</h2>
-
-
-<div class="card">
-
-<p>
-قوانین، بخشنامه‌ها، سامانه مؤدیان، بیمه و مالیات
-</p>
-
-</div>
-
-
-
-
-
-<!-- گیم -->
-
-<h2 class="section-title game">
-🎮 اخبار دنیای گیم
-</h2>
-
-
-<div class="card">
-
-<p>
-PlayStation، Xbox، PC و رویدادهای گیمینگ
-</p>
-
-</div>
-
-
-
-
-
-<!-- موبایل -->
-
-<h2 class="section-title game">
-📱 بازی‌های اندروید
-</h2>
-
-
-<div class="card">
-
-<p>
-بازی‌های جدید، آپدیت‌ها و لینک رسمی
-</p>
-
-</div>
-
-
-
-
-
-<!-- AI -->
-
-<h2 class="section-title ai">
-🤖 هوش مصنوعی
-</h2>
-
-
-<div class="card">
-
-<p>
-مدل‌های جدید AI و ابزارهای کاربردی
-</p>
-
-</div>
-
-
-
-
-
-<!-- قیمت -->
-
-<h2 class="section-title finance">
-💰 قیمت طلا و ارز
-</h2>
-
-
-<div class="card">
-
-<p>
-🥇 طلای ۱۸ عیار:
-</p>
-
-<p>
-🪙 سکه امامی:
-</p>
-
-<p>
-🌎 اونس جهانی:
-</p>
-
-<p>
-💵 دلار آزاد:
-</p>
-
-</div>
-
-
-
-<footer>
-
-Powered by Shahabaiagent_bot
-
-</footer>
-
-
-</div>
-
-
 </body>
-
 </html>
